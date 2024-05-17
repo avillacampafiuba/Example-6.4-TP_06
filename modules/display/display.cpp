@@ -132,6 +132,9 @@ static void displayCodeWrite( bool type, uint8_t dataBus );
 
 void displayInit( displayType_t type, displayConnection_t connection )
 {
+    // En este ejemplo se implementa el display con comunicacion SPI Master/Slave 
+    // Las funciones Lock/Unlock sirven para adquirir/liberar el acceso exclusivo del bus de comunicacion SPI
+
     display.type = type;
     display.connection = connection;
     
